@@ -7,10 +7,6 @@ jobs:
   predict-model:
     runs-on: ubuntu-latest
     steps:
-    - uses: andymckay/labeler@master
-      with:
-        add-labels: "model-inference-run"
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Issue Forms Body Parser
       id: parse
       uses: zentered/issue-forms-body-parser@v2.0.0
