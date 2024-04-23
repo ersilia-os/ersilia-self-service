@@ -52,7 +52,7 @@ jobs:
           Greetings @${{ github.event.issue.user.login }}!
 
           
-          We have successfully compoleted your model inference run. You can download your results [here](${{ steps.upload-artifact.outputs.artifact-url }})
+          We have successfully completed your model inference run. You can download your results [here](${{ steps.upload-artifact.outputs.artifact-url }})
 
           
           Please note that these results will only be available for 30 days after which they will be removed and this issue closed.
