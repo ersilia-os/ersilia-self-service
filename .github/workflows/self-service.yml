@@ -41,7 +41,7 @@ jobs:
         ersilia -v close
     - name: Upload output to GitHub
       id: upload-artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Model Inference Run
         path: output.csv
