@@ -1,0 +1,59 @@
+name: Model Inference Run
+on:
+  issues: 
+    types: [ "opened" ]
+
+jobs:
+  predict-model:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: andymckay/labeler@master
+      with:
+        add-labels: "model-inference-run"
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Issue Forms Body Parser
+      id: parse
+      uses: zentered/issue-forms-body-parser@v2.0.0
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install Ersilia
+      run: |
+        python -m pip install git+https://github.com/ersilia-os/bentoml-ersilia.git
+        python -m pip install -e .
+    - name: Test help command
+      run: |
+        ersilia --help
+        ersilia --version
+    - name: Model Inference Run
+      run: |
+        MODEL_ID=$(echo '${{ steps.parse.outputs.data }}' | jq -r '.model.text')
+        ersilia -v fetch $MODEL_ID
+        ersilia -v serve $MODEL_ID
+        echo '${{ steps.parse.outputs.data }}' | jq -r '.molecules.text' > input.csv
+        echo "Predicting output for input.csv file using model $MODEL_ID"
+
+        ersilia -v api -i input.csv -o output.csv
+        ersilia -v close
+    - name: Upload output to GitHub
+      id: upload-artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Model Inference Run
+        path: output.csv
+        retention-days: 30
+    - name: Add comment
+      run: gh issue comment "$NUMBER" --body "$BODY"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_REPO: ${{ github.repository }}
+        NUMBER: ${{ github.event.issue.number }}
+        BODY: >
+          Greetings @${{ github.event.issue.user.login }}!
+
+          
+          We have successfully compoleted your model inference run. You can download your results [here](${{ steps.upload-artifact.outputs.artifact-url }})
+
+          
+          Please note that these results will only be available for 30 days after which they will be removed and this issue closed.

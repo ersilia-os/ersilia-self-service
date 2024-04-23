@@ -1,0 +1,31 @@
+name: Update Issue Template Model List
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs every day at 3:43 AM
+    - cron: '43 3 * * *'
+
+jobs:
+  update-model-list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install prerequisites
+        run: |
+          pip3 install requests
+          pip3 install ruamel.yaml
+      - name: Update issue template model list
+        run: python .github/scripts/update_model_request_template.py https://ersilia-model-hub.s3.eu-central-1.amazonaws.com/models.json
+      - run: cat .github/ISSUE_TEMPLATE/predict_model.yml
+      - name: Commit changes
+        run: |
+          git config --local user.email "noreply@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .github/ISSUE_TEMPLATE/predict_model.yml
+          git commit -m "Update model list in issue template"
+          git push

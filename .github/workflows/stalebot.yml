@@ -1,0 +1,17 @@
+name: 'Clean up model inference runs'
+on:
+  schedule:
+    # Runs every day at 2:43 AM
+    - cron: '43 2 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          stale-issue-message: "Greetings! This is a friendly reminder that we only keep results for 30 days. If you have not downloaded your results, please do so within the next 5 days."
+          days-before-issue-stale: 25
+          close-issue-message: "This issue has reached the end of its lifecycle and is being closed and the associated data removed. Please feel free to submit a new issue if you need updated data."
+          days-before-issue-close: 30
+          any-of-issue-labels: "model-inference-run"

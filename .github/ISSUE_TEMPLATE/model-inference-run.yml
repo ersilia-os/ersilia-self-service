@@ -1,0 +1,23 @@
+name: Model Inference Run
+description: This template is for requesting a model inference run
+title: "Model Inference: <model_name> <date>"
+labels: [model-inference-run]
+body:
+  - type: markdown
+    attributes:
+      value: Select your model and enter the molecule(s) you want to test. The model will be run on the Ersilia Model Hub and the results will be shared with you.
+  - type: dropdown
+    id: model
+    attributes:
+      label: Model
+      multiple: false
+      description: "Select the target model"
+      options:
+        - "1"
+        - "2"
+        - "3"
+  - type: textarea
+    id: molecules
+    attributes:
+      label: Molecules
+      description: "Enter the molecule(s) you want to test. Use SMILES format. Separate multiple molecules with a new line."
