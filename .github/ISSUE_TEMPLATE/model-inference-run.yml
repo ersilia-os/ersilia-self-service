@@ -13,7 +13,8 @@ body:
     label: Model
     multiple: false
     description: Select the target model
-    options: []
+    options: 
+      - eos3b5e
 - type: textarea
   id: molecules
   attributes:
