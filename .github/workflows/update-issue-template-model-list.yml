@@ -21,11 +21,11 @@ jobs:
           pip3 install ruamel.yaml
       - name: Update issue template model list
         run: python .github/scripts/update_model_request_template.py https://ersilia-model-hub.s3.eu-central-1.amazonaws.com/models.json
-      - run: cat .github/ISSUE_TEMPLATE/predict_model.yml
+      - run: cat .github/ISSUE_TEMPLATE/model-inference-run.yml
       - name: Commit changes
         run: |
           git config --local user.email "noreply@github.com"
           git config --local user.name "GitHub Actions"
-          git add .github/ISSUE_TEMPLATE/predict_model.yml
+          git add .github/ISSUE_TEMPLATE/model-inference-run.yml
           git commit -m "Update model list in issue template"
           git push
