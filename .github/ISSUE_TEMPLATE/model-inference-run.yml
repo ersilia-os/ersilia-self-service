@@ -64,7 +64,6 @@ body:
     - 'MetaTrans: human drug metabolites - eos935d'
     - MolBERT chemical language transformer - eos2thm
     - 'MolBloom: molecule purchasability in ZINC20 - eos8a5g'
-    - MolT5-Translation between Molecules and Natural Language - eos2rd8
     - Molecular Prediction Model Fine-Tuning (MolPMoFiT) - eos9zw0
     - Molecular fingerprint maps based on broadly learned knowledge-based representations
       - eos59rr
