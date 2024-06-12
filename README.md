@@ -1,8 +1,6 @@
-# Ersilia Self Service
-
 <img title="Ersilia" alt="ersilia logo plum" src="./assets/Ersilia_Plum.png" height="70">
 
-## 🤖 Welcome to Ersilia Self Service!
+# 🤖 Welcome to Ersilia Self Service!
 Ersilia Self Service is a self-service repository where you can request predictions on your dataset from any of the [models](https://www.ersilia.io/model-hub) available within the Ersilia Model Hub. To get started, simply navigate to issues menu and create a new "Model Inference Run" [issue](https://github.com/ersilia-os/ersilia-self-service/issues/new?assignees=&labels=model-inference-run&projects=&template=model-inference-run.yml&title=Model+Inference%3A+%3Cmodel_name%3E+%3Cdate%3E). 
 
 
