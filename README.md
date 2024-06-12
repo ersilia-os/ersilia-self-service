@@ -19,7 +19,7 @@ You can browse the list of available models on our [website](https://www.ersilia
 
 # 👩‍💻 Contributors 👨‍💻
 
-This work would not have been possible without the support of our wonderful volunteers!
+This work would not have been possible without the support of our wonderful volunteers! ✨
 
 - [Jenna Massardo](https://github.com/jmassardo)
 - [Sean Marcia](https://github.com/seanmarcia)
