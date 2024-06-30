@@ -58,7 +58,6 @@ body:
     - Ligand-based prediction of hERG blockade - eos2ta5
     - 'MAIP distillation: antimalarial potential prediction - eos2gth'
     - 'MAIP: antimalarial activity prediction - eos4zfy'
-    - MeSH therapeutic use based on chemical structure - eos238c
     - Membrane permeability in Mycobacterium tuberculosis - eos8d8a
     - Membrane permeability of fluorescent probes - eos65rt
     - 'MetaTrans: human drug metabolites - eos935d'
