@@ -14,6 +14,7 @@ body:
     multiple: false
     description: Select the target model
     options:
+    - Inhibition of N.gonorrhoeae - eos5cl7
     - 3D pharmacophore descriptor - eos4x30
     - ADMET properties prediction - eos7d58
     - ADMETlab models for evaluation of drug candidates - eos2re5
