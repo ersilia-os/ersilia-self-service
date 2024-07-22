@@ -63,8 +63,6 @@ body:
     - MolBERT chemical language transformer - eos2thm
     - 'MolBloom: molecule purchasability in ZINC20 - eos8a5g'
     - Molecular Prediction Model Fine-Tuning (MolPMoFiT) - eos9zw0
-    - Molecular fingerprint maps based on broadly learned knowledge-based representations
-      - eos59rr
     - Molecular representation learning - eos4avb
     - Molecular weight - eos3b5e
     - Morgan Fingerprints - eos4wt0
