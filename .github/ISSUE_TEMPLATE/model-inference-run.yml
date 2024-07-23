@@ -18,24 +18,39 @@ body:
     - ADMET properties prediction - eos7d58
     - ADMETlab models for evaluation of drug candidates - eos2re5
     - ADMETlab-2 - eos2v11
+    - Adverse Drug Reactions - eos77w8
     - Anti-schistosomiasis activity - eos2l0q
     - Antimalarial activity (ABS and sexual stages) - eos80ch
+    - Antimalarial activity (MMV) - eos4rta
+    - Antimalarial activity from OSM - eos7yti
+    - Antituberculosis activity prediction - eos9ivc
+    - Aqueous Kinetic Solubility - eos74bo
     - Aqueous solubility prediction - eos6oli
+    - Atomization energy of small molecules - eos6o0z
+    - Avalon fingerprint - eos8h6g
+    - BACE-1 inhibition - eos2mhp
     - 'BayeshERG: hERG channel blockade - eos4tcc'
     - Bayesian prediction of synthetic accessibility - eos7pw8
+    - BioGPT embeddings - eos1xje
     - Blood-brain barrier penetration - eos1amr
     - Broad spectrum antibiotic activity - eos4e40
     - Broad spectrum antibiotic potential - eos4e41
+    - CReM fragment based structure generation - eos4q1a
     - CYP2C9 metabolism - eos5jz9
     - CYP2D6 metabolism - eos7nno
+    - CYP3A4 metabolism - eos3ev6
     - CYP450 metabolism - eos44zp
+    - Carcinogenic potential of metabolites and small molecules - eos1579
+    - ChEMBL Molecular Sampler - eos1noy
     - ChemGPT-4.7 - eos3cf4
     - Chemical Checker Signaturizer 3D - eos8aox
     - Chemical Checker signaturizer - eos4u6p
     - Classification of hERG blockers and nonblockers - eos30gr
+    - Coloring molecules for Caco-2 cell permeability - eos1af5
     - Coloring molecules for hERG blockade - eos43at
     - Coloring molecules for interaction with CYP3A4 - eos96ia
     - Coloring molecules for plasma protein binding prediction - eos6ao8
+    - Continuous and data-driven descriptors - eos7a04
     - Converter of SMILES in Canonical, Selfie, Inchi, Inchi Key form - eos7qga
     - DeepSMILES, an alternate SMILES representation for deep learning - eos2mrz
     - Drug-likeness prediction with Bayesian neural networks - eos9sa2
@@ -43,37 +58,66 @@ body:
     - ESKAPE pathogen inhibition - eos5xng
     - Electronic spectra and excited state energy - eos3xip
     - ErG 2D Descriptors - eos5guo
+    - Ersilia Compound Embeddings - eos2gw4
+    - Estate Molecular Descriptors - eos3zur
+    - Extending molecular scaffolds with building blocks - eos633t
+    - Extending molecular scaffolds with fragments - eos9taz
+    - 'FCD: Fréchet ChemNet Distance to evaluate generative models - eos9be7'
+    - FasmiFra molecule generator - eos4qda
     - GDBChEMBL similarity search - eos4b8j
     - GDBMedChem similarity search - eos7jlv
+    - Growth Inhibitors of Neisseria gonorrhoeae - eos5cl7
+    - H3D virtual screening cascade light - eos7kpb
     - HepG2 Toxicity - MMV - eos3le9
+    - Holistic molecular descriptors for scaffold hopping - eos3ae6
+    - Human Liver Cytosolic Stability - eos9yy1
     - Human Liver Microsomal Stability - eos31ve
     - Human Plasma Protein Binding (PPB) of Compounds - eos22io
+    - Human cytotoxicity endpoints - eos42ez
     - Human oral bioavailability prediction - eos2lqb
+    - Hydration free energy of small molecules in water - eos157v
     - Identifying HDAC3 inhibitors - eos1n4b
     - ImageMol HIV growth inhibition - eos6hy3
+    - ImageMol human beta-secretase-1 (BACE-1) inhibition - eos8c0o
+    - Inhibition of A.Baumannii growth - eos3804
     - Inhibition of Eumycetoma from MycetOS - eos4f95
+    - Inhibition of HDAC1 - eos2zmb
     - Inhibition of Hepatits B virus - eos8lok
     - 'InterDILI: drug-induced injury prediction - eos21q7'
+    - Large-scale graph transformer - eos7w6n
     - Ligand-based prediction of hERG blockade - eos2ta5
     - 'MAIP distillation: antimalarial potential prediction - eos2gth'
     - 'MAIP: antimalarial activity prediction - eos4zfy'
+    - MeSH therapeutic use based on chemical structure - eos238c
     - Membrane permeability in Mycobacterium tuberculosis - eos8d8a
     - Membrane permeability of fluorescent probes - eos65rt
     - 'MetaTrans: human drug metabolites - eos935d'
+    - Microstate pKa values - eos2b6f
     - MolBERT chemical language transformer - eos2thm
     - 'MolBloom: molecule purchasability in ZINC20 - eos8a5g'
+    - MolT5-Translation between Molecules and Natural Language - eos2rd8
     - Molecular Prediction Model Fine-Tuning (MolPMoFiT) - eos9zw0
+    - Molecular fingerprint maps based on broadly learned knowledge-based representations
+      - eos59rr
+    - Molecular maps based on broadly learned knowledge-based representations - eos6m4j
     - Molecular representation learning - eos4avb
     - Molecular weight - eos3b5e
+    - Mordred chemical descriptors - eos78ao
     - Morgan Fingerprints - eos4wt0
     - Morgan counts fingerprints - eos5axz
+    - Multi-target prediction based on ChEMBL data - eos1vms
+    - Mycobacterium tuberculosis inhibitor prediction - eos46ev
+    - Natural product fingerprint - eos6tg8
     - Natural product likeness score - eos9yui
+    - Natural product score - eos8ioa
     - Neural network-based logP prediction for druglike small molecules - eos9ym3
     - Octanol/water distribution coefficient - eos85a3
     - Organic reaction outcome prediction - eos5qfo
     - PADEL small molecule descriptors - eos7asg
+    - PAMPA effective permeability - eos97yu
     - Parallel Artificial Membrane Permeability Assay (PAMPA) 7 - eos9tyg
     - Parallel Artificial Membrane Permeability Assay 5 - eos81ew
+    - Passive permeability based on simulations - eos2hbd
     - Path-based fingerprint - eos7jio
     - Pharmacophore-guided molecular generation - eos69e6
     - Physicochemical descriptors available from RDKIT - eos8a4x
@@ -81,25 +125,42 @@ body:
       - eos30f3
     - Predicts activity of compounds accross the Tox21 panel - eos5smc
     - PubChem Molecular Sampler - eos2hzy
+    - QcrB Inhibition (M. tuberculosis) - eos24jm
+    - REINVENT 4 Mol2MolMediumSimilarity - eos694w
     - REINVENT 4 Mol2MolScaffold - eos57bx
     - RXNFP - chemical reaction fingerprints - eos6aun
+    - Rat liver microsomal stability - eos5505
+    - Retrosynthesis planning - eos526j
     - Retrosynthetic accessibility score - eos2r5a
     - S2DV HepG2 toxicity - eos2fy6
     - SARS-CoV inhibition - eos9f6t
+    - SARS-CoV-2 Anti viral screening - eos4cxk
     - 'SARS-CoV-2 antiviral prediction: REDIAL-2020 - eos8fth'
     - SELF-referencIng Embedded Strings - eos6pbf
     - SMILES transformer descriptor - eos2lm8
     - 'STOUT: SMILES to IUPAC name translator - eos4se9'
     - Scaffold Morphing - eos8bhe
     - Scaffold decoration - eos2401
+    - Similarity search in ChEMBL - eos2a9n
     - Similarity search in ChEMBL, DrugBank and UNPD - eos9c7k
     - Small World Enamine REAL search - eos9ueu
+    - Small World Enamine Zinc search - eos1d7r
+    - Small World Wuxi search - eos3kcw
     - Small molecule price prediction - eos7a45
+    - 'SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES - eos1mxi'
+    - Stoned Sampler - eos8fma
+    - Substructure-based search of novel antibiotics - eos18ie
+    - Synthetic accessibility score - eos9ei3
     - ToxCast toxicity panel - eos481p
     - Toxicity and synthetic accessibility prediction - eos92sw
+    - Toxicity at clinical trial stage - eos6fza
     - Toxicity prediction across the Tox21 panel with semi-supervised learning - eos69p9
     - USR descriptors with pharmacophoric constraints - eos1ut3
+    - Variational autoencoder for small molecule generation - eos3ae7
     - WHALES scaled - eos24ur
+    - WHALES similarity search on 600k molecules from Q-Mug - eos6ru3
+    - Water solubility - eos8451
+    - imagemol-gpcr - eos93h2
 - type: textarea
   id: molecules
   attributes:
