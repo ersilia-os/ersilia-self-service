@@ -126,6 +126,7 @@ body:
     - Predicts activity of compounds accross the Tox21 panel - eos5smc
     - PubChem Molecular Sampler - eos2hzy
     - QcrB Inhibition (M. tuberculosis) - eos24jm
+    - REINVENT 4 LibInvent - eos6ost
     - REINVENT 4 Mol2MolMediumSimilarity - eos694w
     - REINVENT 4 Mol2MolScaffold - eos57bx
     - RXNFP - chemical reaction fingerprints - eos6aun
