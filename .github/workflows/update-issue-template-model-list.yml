@@ -27,5 +27,11 @@ jobs:
           git config --local user.email "noreply@github.com"
           git config --local user.name "GitHub Actions"
           git add .github/ISSUE_TEMPLATE/model-inference-run.yml
-          git commit -m "Update model list in issue template"
-          git push
+          # Check if there are staged changes
+          if git diff --cached --quiet; then
+            echo "No staged changes to commit."
+          else
+            echo "Staged changes detected. Committing..."
+            git commit -m "Update model list in issue template"
+            git push
+          fi
