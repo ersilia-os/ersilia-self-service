@@ -157,6 +157,7 @@ body:
     - Toxicity at clinical trial stage - eos6fza
     - Toxicity prediction across the Tox21 panel with semi-supervised learning - eos69p9
     - USR descriptors with pharmacophoric constraints - eos1ut3
+    - Uni-Mol molecular representation - eos39co
     - Variational autoencoder for small molecule generation - eos3ae7
     - WHALES scaled - eos24ur
     - WHALES similarity search on 600k molecules from Q-Mug - eos6ru3
