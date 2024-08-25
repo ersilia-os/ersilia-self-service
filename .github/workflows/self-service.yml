@@ -10,6 +10,16 @@ jobs:
     - name: Issue Forms Body Parser
       id: parse
       uses: zentered/issue-forms-body-parser@v2.0.0
+    - name: Update Issue title
+      run: |
+        gh repo clone ersilia-os/ersilia-self-service
+        MODEL_NAME=$(echo '${{ steps.parse.outputs.data }}' | jq -r '.model.text' | cut -d'-' -f1)
+        MODEL_ID=$(echo '${{ steps.parse.outputs.data }}' | jq -r '.model.text' | cut -d'-' -f2-)
+        CURRENT_DATE=$(date +'%Y-%m-%d')
+        cd ersilia-self-service
+        gh issue edit ${{ github.event.issue.number }} --title "🚀 Model Inference Run 🤖 $MODEL_ID: $MODEL_NAME 📅 $CURRENT_DATE"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/checkout@v4
       with: 
         repository: ersilia-os/ersilia
