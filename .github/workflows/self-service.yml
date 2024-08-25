@@ -5,6 +5,7 @@ on:
 
 jobs:
   predict-model:
+    if: github.event.issue.labels[0].name == 'model-inference-run'
     runs-on: ubuntu-latest
     steps:
     - name: Issue Forms Body Parser
@@ -37,7 +38,7 @@ jobs:
         ersilia --version
     - name: Model Inference Run
       run: |
-        MODEL_ID=$(echo '${{ steps.parse.outputs.data }}' | jq -r '.model.text' | awk -F' - ' '{print $1}')
+        MODEL_ID=$(echo '${{ steps.parse.outputs.data }}' | jq -r '.model.text' | awk -F' - ' '{print $2}')
         ersilia -v fetch $MODEL_ID --from_dockerhub
         ersilia -v serve $MODEL_ID
         echo '${{ steps.parse.outputs.data }}' | jq -r '.molecules.text' > input.csv
