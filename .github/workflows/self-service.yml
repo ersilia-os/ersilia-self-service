@@ -47,7 +47,7 @@ jobs:
         echo '${{ steps.parse.outputs.data }}' | jq -r '.molecules.text' > input.csv
         echo "Predicting output for input.csv file using model $MODEL_ID"
 
-        ersilia -v api -i input.csv -o output.csv
+        ersilia -v run -i "input.csv" -o "output.csv"
         ersilia -v close
     - name: Upload output to GitHub
       id: upload-artifact
