@@ -140,8 +140,8 @@ body:
     - SELF-referencIng Embedded Strings - eos6pbf
     - SMILES transformer descriptor - eos2lm8
     - 'STOUT: SMILES to IUPAC name translator - eos4se9'
-    - Scaffold Morphing - eos8bhe
     - Scaffold decoration - eos2401
+    - Scaffold morphing - eos8bhe
     - Similarity search in ChEMBL - eos2a9n
     - Similarity search in ChEMBL, DrugBank and UNPD - eos9c7k
     - Small World Enamine REAL search - eos9ueu
