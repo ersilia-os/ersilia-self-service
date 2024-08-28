@@ -1,3 +1,9 @@
+<div style="text-align: center; font-size: 1.5em;">
+ 📝 Checkout GitHub's latest <a href="https://github.blog/open-source/social-impact/automating-open-source-how-ersilia-distributes-ai-models-to-advance-global-health-equity/">blog-post</a> about this work!
+</div>
+
+<br>
+
 <img title="Ersilia" alt="ersilia logo plum" src="./assets/Ersilia_Plum.png" height="70">
 
 # 🤖 Welcome to Ersilia Self Service!
