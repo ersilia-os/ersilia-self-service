@@ -37,10 +37,13 @@ jobs:
         ersilia --help
         ersilia --version
     - name: Model Inference Run
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_SPLUNK }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_SPLUNK }}
       run: |
         MODEL_ID=$(echo '${{ steps.parse.outputs.data }}' | jq -r '.model.text' | awk -F' - ' '{print $2}')
         ersilia -v fetch $MODEL_ID --from_dockerhub
-        ersilia -v serve $MODEL_ID
+        ersilia -v serve $MODEL_ID --track
         echo '${{ steps.parse.outputs.data }}' | jq -r '.molecules.text' > input.csv
         echo "Predicting output for input.csv file using model $MODEL_ID"
 
