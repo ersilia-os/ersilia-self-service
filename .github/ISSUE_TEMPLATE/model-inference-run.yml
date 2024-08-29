@@ -41,6 +41,7 @@ body:
     - CYP3A4 metabolism - eos3ev6
     - CYP450 metabolism - eos44zp
     - Carcinogenic potential of metabolites and small molecules - eos1579
+    - Cardiotoxicity Classifier - eos1pu1
     - ChEMBL Molecular Sampler - eos1noy
     - ChemGPT-4.7 - eos3cf4
     - Chemical Checker Signaturizer 3D - eos8aox
@@ -121,6 +122,7 @@ body:
     - Path-based fingerprint - eos7jio
     - Pharmacophore-guided molecular generation - eos69e6
     - Physicochemical descriptors available from RDKIT - eos8a4x
+    - Predict bioactivity against Main Protease of SARS-CoV-2 - eos3nn9
     - Prediction of hERG Channel Blockers with Directed Message Passing Neural Networks
       - eos30f3
     - Predicts activity of compounds accross the Tox21 panel - eos5smc
