@@ -120,6 +120,7 @@ body:
     - Parallel Artificial Membrane Permeability Assay 5 - eos81ew
     - Passive permeability based on simulations - eos2hbd
     - Path-based fingerprint - eos7jio
+    - Pharmacokinetics Profiler (PhaKinPro) - eos39dp
     - Pharmacophore-guided molecular generation - eos69e6
     - Physicochemical descriptors available from RDKIT - eos8a4x
     - Predict bioactivity against Main Protease of SARS-CoV-2 - eos3nn9
