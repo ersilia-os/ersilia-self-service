@@ -55,6 +55,7 @@ body:
     - Converter of SMILES in Canonical, Selfie, Inchi, Inchi Key form - eos7qga
     - DeepSMILES, an alternate SMILES representation for deep learning - eos2mrz
     - Drug-likeness prediction with Bayesian neural networks - eos9sa2
+    - Drug-likeness scoring based on unsupervised learning - eos9p4a
     - 'DrugTax: Drug taxonomy - eos24ci'
     - ESKAPE pathogen inhibition - eos5xng
     - Electronic spectra and excited state energy - eos3xip
