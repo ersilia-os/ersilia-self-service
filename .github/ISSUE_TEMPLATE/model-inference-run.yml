@@ -35,6 +35,7 @@ body:
     - Blood-brain barrier penetration - eos1amr
     - Broad spectrum antibiotic activity - eos4e40
     - Broad spectrum antibiotic potential - eos4e41
+    - Burkholderia cenocepacia inhibition - eos5xng
     - CReM fragment based structure generation - eos4q1a
     - CYP2C9 metabolism - eos5jz9
     - CYP2D6 metabolism - eos7nno
@@ -57,7 +58,6 @@ body:
     - Drug-likeness prediction with Bayesian neural networks - eos9sa2
     - Drug-likeness scoring based on unsupervised learning - eos9p4a
     - 'DrugTax: Drug taxonomy - eos24ci'
-    - ESKAPE pathogen inhibition - eos5xng
     - Electronic spectra and excited state energy - eos3xip
     - ErG 2D Descriptors - eos5guo
     - Ersilia Compound Embeddings - eos2gw4
@@ -149,8 +149,8 @@ body:
     - Similarity search in ChEMBL - eos2a9n
     - Similarity search in ChEMBL, DrugBank and UNPD - eos9c7k
     - Small World Enamine REAL search - eos9ueu
-    - Small World Enamine Zinc search - eos1d7r
     - Small World Wuxi search - eos3kcw
+    - Small World Zinc search - eos1d7r
     - Small molecule price prediction - eos7a45
     - 'SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES - eos1mxi'
     - Stoned Sampler - eos8fma
