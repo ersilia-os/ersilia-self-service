@@ -125,6 +125,7 @@ body:
     - Pharmacophore-guided molecular generation - eos69e6
     - Physicochemical descriptors available from RDKIT - eos8a4x
     - Predict bioactivity against Main Protease of SARS-CoV-2 - eos3nn9
+    - Predict micro-pKa of organic molecules - eos3wzy
     - Prediction of hERG Channel Blockers with Directed Message Passing Neural Networks
       - eos30f3
     - Predicts activity of compounds accross the Tox21 panel - eos5smc
