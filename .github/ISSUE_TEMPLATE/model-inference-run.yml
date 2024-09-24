@@ -58,6 +58,7 @@ body:
     - Drug-likeness prediction with Bayesian neural networks - eos9sa2
     - Drug-likeness scoring based on unsupervised learning - eos9p4a
     - 'DrugTax: Drug taxonomy - eos24ci'
+    - Early prediction of Drug-Induced Liver Injury - eos5gge
     - Electronic spectra and excited state energy - eos3xip
     - ErG 2D Descriptors - eos5guo
     - Ersilia Compound Embeddings - eos2gw4
