@@ -29,6 +29,7 @@ body:
     - Atomization energy of small molecules - eos6o0z
     - Avalon fingerprint - eos8h6g
     - BACE-1 inhibition - eos2mhp
+    - BBBP model tested on marine-derived kinase inhibitors - eos3mk2
     - 'BayeshERG: hERG channel blockade - eos4tcc'
     - Bayesian prediction of synthetic accessibility - eos7pw8
     - BioGPT embeddings - eos1xje
