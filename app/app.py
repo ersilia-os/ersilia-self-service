@@ -99,7 +99,7 @@ st.sidebar.markdown("The current Ersilia Self Service tool was **developed by a 
 # Main app layout
 st.title(":rocket: Ersilia Self Service")
 st.markdown("This app runs [Ersilia Model Hub](https://github.com/ersilia-os/ersilia) predictions online using GitHub Actions. The app is just a wrapper for the [Ersilia Self Service](https://github.com/ersilia-os/ersilia-self-service) repository.")
-st.warning("The ultimate goal of Ersilia is to offer a low-latency cloud-based solution for users to run models online. This is just a proof of concept and a provisional solution to cover the urgent needs of E. Expect high latency.")
+st.warning("The ultimate goal of Ersilia is to offer a low-latency cloud-based solution for users to run models online. This is just a proof of concept and a provisional solution to cover the urgent needs of our current users. Expect high latency.")
 
 select_options = [(model["Identifier"], model["Slug"], model["Title"]) for model in models_metadata]
 select_options = sorted(select_options, key=lambda x: x[0])
