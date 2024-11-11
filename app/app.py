@@ -9,7 +9,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from github import Github
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Ersilia Self Service")
 
 # Load environment variables
 load_dotenv()
