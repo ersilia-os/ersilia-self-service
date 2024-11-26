@@ -1,0 +1,27 @@
+name: Model Inference Run
+on:
+   workflow_dispatch:
+
+jobs:
+  test-maip:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Download deps
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests==2.31.0
+        pip install beautifulsoup4==4.12.2
+        pip install pandas==1.3.5
+        pip install numpy==1.21.6
+
+    - name: Run script
+      run: |
+        python .github/scripts/test_maip.py
