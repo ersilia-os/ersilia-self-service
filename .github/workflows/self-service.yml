@@ -8,9 +8,11 @@ jobs:
     if: github.event.issue.labels[0].name == 'model-inference-run'
     runs-on: ubuntu-latest
     steps:
+
     - name: Issue Forms Body Parser
       id: parse
       uses: zentered/issue-forms-body-parser@v2.0.0
+
     - name: Update Issue title
       run: |
         gh repo clone ersilia-os/ersilia-self-service
@@ -24,19 +26,25 @@ jobs:
     - uses: actions/checkout@v4
       with: 
         repository: ersilia-os/ersilia
+
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
+
     - name: Install Ersilia
       run: |
         python -m pip install git+https://github.com/ersilia-os/bentoml-ersilia.git
         python -m pip install -e .
+
     - name: Test help command
       run: |
         ersilia --help
         ersilia --version
+
     - name: Model Inference Run
+      id: model-inference-run
+      continue-on-error: true
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_SPLUNK }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_SPLUNK }}
@@ -50,14 +58,19 @@ jobs:
 
         ersilia -v run -i "input.csv" -o "output.csv"
         ersilia -v close
+
     - name: Upload output to GitHub
       id: upload-artifact
+      if: steps.model-inference-run.outcome == 'success'
       uses: actions/upload-artifact@v4
       with:
         name: Model Inference Run
         path: output.csv
         retention-days: 30
-    - name: Add comment
+
+    - name: Add success comment
+      id: success-comment
+      if: steps.model-inference-run.outcome == 'success'
       run: gh issue comment "$NUMBER" --body "$BODY"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -71,3 +84,20 @@ jobs:
 
           
           Please note that these results will only be available for 30 days after which they will be removed and this issue closed.
+
+    - name: Add failure comment
+      id: failure-comment
+      if: steps.model-inference-run.outcome == 'failure'
+      run: gh issue comment "$NUMBER" --body "$BODY"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_REPO: ${{ github.repository }}
+        NUMBER: ${{ github.event.issue.number }}
+        BODY: >
+          Greetings @${{ github.event.issue.user.login }}!
+
+          
+          We encountered an error while running this model. Rest assured that we are working on resolving this issue. We will update you as soon as we have more information.
+
+          
+          If you need further assistance, please feel free to reach out to us.
