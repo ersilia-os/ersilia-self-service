@@ -23,6 +23,7 @@ body:
     - Antimalarial activity (ABS and sexual stages) - eos80ch
     - Antimalarial activity (MMV) - eos4rta
     - Antimalarial activity from OSM - eos7yti
+    - Antimicrobial class specificity prediction - eos74km
     - Antituberculosis activity prediction - eos9ivc
     - Aqueous Kinetic Solubility - eos74bo
     - Aqueous solubility prediction - eos6oli
@@ -32,7 +33,6 @@ body:
     - BBBP model tested on marine-derived kinase inhibitors - eos3mk2
     - 'BayeshERG: hERG channel blockade - eos4tcc'
     - Bayesian prediction of synthetic accessibility - eos7pw8
-    - BioGPT embeddings - eos1xje
     - Blood-brain barrier penetration - eos1amr
     - Broad spectrum antibiotic activity - eos4e40
     - Burkholderia cenocepacia inhibition - eos5xng
