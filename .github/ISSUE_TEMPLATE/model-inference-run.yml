@@ -20,8 +20,8 @@ body:
     - ADMETlab-2 - eos2v11
     - Adverse Drug Reactions - eos77w8
     - Anti-schistosomiasis activity - eos2l0q
-    - Antimalarial activity (ABS and sexual stages) - eos80ch
     - Antimalarial activity (MMV) - eos4rta
+    - Antimalarial activity for sexual stage and asexual blood stage (ABS) - eos80ch
     - Antimalarial activity from OSM - eos7yti
     - Antimicrobial class specificity prediction - eos74km
     - Antituberculosis activity prediction - eos9ivc
@@ -82,7 +82,7 @@ body:
     - Identifying HDAC3 inhibitors - eos1n4b
     - ImageMol HIV growth inhibition - eos6hy3
     - ImageMol human beta-secretase-1 (BACE-1) inhibition - eos8c0o
-    - Inhibition of A.Baumannii growth - eos3804
+    - Inhibition of Acinetobacter baumannii growth - eos3804
     - Inhibition of Eumycetoma from MycetOS - eos4f95
     - Inhibition of HDAC1 - eos2zmb
     - Inhibition of Hepatits B virus - eos8lok
@@ -91,6 +91,8 @@ body:
     - Ligand-based prediction of hERG blockade - eos2ta5
     - 'MAIP distillation: antimalarial potential prediction - eos2gth'
     - 'MAIP: antimalarial activity prediction - eos4zfy'
+    - 'MRlogP: neural network-based logP prediction for druglike small molecules -
+      eos9ym3'
     - MeSH therapeutic use based on chemical structure - eos238c
     - Membrane permeability in Mycobacterium tuberculosis - eos8d8a
     - Membrane permeability of fluorescent probes - eos65rt
@@ -99,21 +101,20 @@ body:
     - MolBERT chemical language transformer - eos2thm
     - 'MolBloom: molecule purchasability in ZINC20 - eos8a5g'
     - MolT5-Translation between Molecules and Natural Language - eos2rd8
-    - Molecular Prediction Model Fine-Tuning (MolPMoFiT) - eos9zw0
+    - Molecular Prediction Model Fine-Tuning (MolPMoFiT) encodings - eos9zw0
     - Molecular fingerprint maps based on broadly learned knowledge-based representations
       - eos59rr
     - Molecular maps based on broadly learned knowledge-based representations - eos6m4j
     - Molecular representation learning - eos4avb
     - Molecular weight - eos3b5e
     - Mordred chemical descriptors - eos78ao
-    - Morgan Fingerprints - eos4wt0
     - Morgan counts fingerprints - eos5axz
+    - Morgan fingerprints in binary form (radius 3, 2048 dimensions) - eos4wt0
     - Multi-target prediction based on ChEMBL data - eos1vms
     - Mycobacterium tuberculosis inhibitor prediction - eos46ev
     - Natural product fingerprint - eos6tg8
     - Natural product likeness score - eos9yui
     - Natural product score - eos8ioa
-    - Neural network-based logP prediction for druglike small molecules - eos9ym3
     - Octanol/water distribution coefficient - eos85a3
     - Organic reaction outcome prediction - eos5qfo
     - PADEL small molecule descriptors - eos7asg
@@ -127,7 +128,7 @@ body:
     - Physicochemical descriptors available from RDKIT - eos8a4x
     - Predict bioactivity against Main Protease of SARS-CoV-2 - eos3nn9
     - Predict micro-pKa of organic molecules - eos3wzy
-    - Prediction of hERG Channel Blockers with Directed Message Passing Neural Networks
+    - Prediction of hERG channel blockers with directed message passing neural networks
       - eos30f3
     - Predicts activity of compounds accross the Tox21 panel - eos5smc
     - PubChem Molecular Sampler - eos2hzy
@@ -156,7 +157,6 @@ body:
     - Small molecule price prediction - eos7a45
     - 'SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES - eos1mxi'
     - Stoned Sampler - eos8fma
-    - Substructure-based search of novel antibiotics - eos18ie
     - Synthetic accessibility score - eos9ei3
     - ToxCast toxicity panel - eos481p
     - Toxicity and synthetic accessibility prediction - eos92sw
