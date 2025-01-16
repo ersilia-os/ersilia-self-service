@@ -20,6 +20,7 @@ body:
     - ADMETlab-2 - eos2v11
     - Adverse Drug Reactions - eos77w8
     - Anti-schistosomiasis activity - eos2l0q
+    - Antibiotic activity prediction against Staphylococcus aureus - eos18ie
     - Antimalarial activity (MMV) - eos4rta
     - Antimalarial activity for sexual stage and asexual blood stage (ABS) - eos80ch
     - Antimalarial activity from OSM - eos7yti
@@ -47,6 +48,8 @@ body:
     - ChemGPT-4.7 - eos3cf4
     - Chemical Checker Signaturizer 3D - eos8aox
     - Chemical Checker signaturizer - eos4u6p
+    - Chemical space 2D projections against ChemDiv - eos2db3
+    - Chemical space 2D projections against DrugBank - eos9gg2
     - Classification of hERG blockers and nonblockers - eos30gr
     - Coloring molecules for Caco-2 cell permeability - eos1af5
     - Coloring molecules for hERG blockade - eos43at
@@ -131,6 +134,7 @@ body:
     - Prediction of hERG channel blockers with directed message passing neural networks
       - eos30f3
     - Predicts activity of compounds accross the Tox21 panel - eos5smc
+    - Projections against Coconut - eos8ub5
     - PubChem Molecular Sampler - eos2hzy
     - QcrB Inhibition (M. tuberculosis) - eos24jm
     - REINVENT 4 LibInvent - eos6ost
