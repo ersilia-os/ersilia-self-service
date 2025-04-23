@@ -34,7 +34,6 @@ jobs:
 
     - name: Install Ersilia
       run: |
-        python -m pip install git+https://github.com/ersilia-os/bentoml-ersilia.git
         python -m pip install -e .
 
     - name: Test help command
@@ -51,7 +50,7 @@ jobs:
       run: |
         MODEL_ID=$(echo '${{ steps.parse.outputs.data }}' | jq -r '.model.text' | awk -F' - ' '{print $2}')
         ersilia -v fetch $MODEL_ID --from_dockerhub
-        ersilia -v serve $MODEL_ID --track
+        ersilia -v serve $MODEL_ID
         echo "smiles" > input.csv
         echo '${{ steps.parse.outputs.data }}' | jq -r '.molecules.text' >> input.csv
         echo "Predicting output for input.csv file using model $MODEL_ID"
